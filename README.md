@@ -22,7 +22,7 @@
 
 ### 🎥 Demo
 
-https://github.com/user-attachments/assets/demo-video.mp4
+https://github.com/KshitizCodeHub/Smart-Resume-Screener/assets/demo-video.mp4
 
 > 📹 **[Download Demo Video](./assets/demo-video.mp4)** for offline viewing
 
@@ -487,18 +487,6 @@ Special thanks to:
 - 🚀 **FastAPI Community** - For excellent documentation and support
 - 🍃 **MongoDB** - For flexible data storage
 - 💡 **Open Source Community** - For inspiration and contributions
-
----
-
-## 📞 Support
-
-<div align="center">
-
-[![Documentation](https://img.shields.io/badge/📖_Documentation-Visit-blue?style=for-the-badge)](http://localhost:8000/docs)
-[![Issues](https://img.shields.io/badge/🐛_Issues-Report-red?style=for-the-badge)](https://github.com/KshitizCodeHub/Smart-Resume-Screener/issues)
-[![Discussions](https://img.shields.io/badge/💬_Discussions-Join-green?style=for-the-badge)](https://github.com/KshitizCodeHub/Smart-Resume-Screener/discussions)
-
-</div>
 
 ---
 
