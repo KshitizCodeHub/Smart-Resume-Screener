@@ -228,10 +228,6 @@ Smart-Resume-Screener/
 
 ## 🧪 Testing
 
-## 🧪 Testing
-
-## 🧪 Testing
-
 ```bash
 pytest                    # Run all tests
 pytest -v                 # Verbose output
