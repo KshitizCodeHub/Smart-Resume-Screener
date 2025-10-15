@@ -38,8 +38,6 @@ https://github.com/user-attachments/assets/ea0b34bb-5886-45c3-a440-4c1994d4e296
 
 ## ✨ Key Features
 
-## ✨ Key Features
-
 <table>
 <tr>
 <td width="50%">
@@ -109,8 +107,6 @@ graph LR
 
 ## 🚀 Installation
 
-## 🚀 Installation
-
 ```bash
 # Clone repository
 git clone https://github.com/KshitizCodeHub/Smart-Resume-Screener.git
@@ -146,8 +142,6 @@ MAX_FILE_SIZE_MB=10
 
 ## 📖 Usage
 
-## 📖 Usage
-
 ### Workflow
 
 ```mermaid
@@ -167,8 +161,6 @@ graph TD
 4. **Review Results** - See scores, justifications, and analytics
 
 ---
-
-## 🔌 API Endpoints
 
 ## 🔌 API Endpoints
 
@@ -205,10 +197,6 @@ curl -X POST "http://localhost:8000/api/match" \
 </details>
 
 ---
-
-## 🏗️ Project Structure
-
-## 🏗️ Project Structure
 
 ## 🏗️ Project Structure
 
