@@ -22,7 +22,9 @@
 
 <div align="center">
 
-[**Watch Demo Video** ⏯️](./assets/demo-video.mp4)
+https://github.com/user-attachments/assets/your-video-id.mp4
+
+> Video will autoplay on GitHub. If it doesn't load, [download it here](./assets/demo-video.mp4)
 
 </div>
 
@@ -98,6 +100,20 @@ uvicorn app.main:app --reload
 3. **Match Candidates** - Run AI-powered matching analysis
 4. **Review Results** - View scores, justifications, and analytics
 
+### Workflow
+
+```mermaid
+graph LR
+    A[Upload Resume] --> B[Parse Document]
+    B --> C[Extract Data]
+    D[Create Job] --> E[Define Requirements]
+    C --> F[Match Analysis]
+    E --> F
+    F --> G[AI Scoring]
+    G --> H[View Results]
+    H --> I[Analytics Dashboard]
+```
+
 ---
 
 ## API Endpoints
@@ -155,10 +171,6 @@ MIT License - see [LICENSE](LICENSE) file for details.
 ---
 
 <div align="center">
-
-⭐ **Star this repository if you find it helpful**
-
----
 
 **Smart Resume Screener** • Built with Google Gemini AI
 
