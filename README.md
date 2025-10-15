@@ -22,7 +22,7 @@
 
 <div align="center">
 
-https://github.com/user-attachments/assets/your-video-id.mp4
+https://github.com/user-attachments/assets/ea0b34bb-5886-45c3-a440-4c1994d4e296
 
 > Video will autoplay on GitHub. If it doesn't load, [download it here](./assets/demo-video.mp4)
 
