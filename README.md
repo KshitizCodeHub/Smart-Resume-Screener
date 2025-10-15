@@ -22,6 +22,19 @@
 
 **Smart Resume Screener** is a cutting-edge AI-powered application that revolutionizes the recruitment process by automatically analyzing resumes, extracting key information, and intelligently matching candidates with job requirements. Powered by Google's Gemini AI, it provides comprehensive scoring, detailed justifications, and actionable insights to help you find the perfect candidate faster.
 
+### 🎥 Demo Video
+
+<div align="center">
+
+<video width="100%" controls>
+  <source src="./assets/demo-video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+**📹 [Download Demo Video](./assets/demo-video.mp4)** *(Click if video doesn't play)*
+
+</div>
+
 ### 🎥 What Makes It Special?
 
 - 🤖 **AI-Powered Matching**: Advanced LLM integration using Google Gemini for semantic understanding
