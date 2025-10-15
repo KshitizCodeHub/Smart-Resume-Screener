@@ -20,27 +20,11 @@
 
 ---
 
-### 🎥 Demo Video
+### 🎥 Demo
 
-> **Watch the application in action!** 
+https://github.com/user-attachments/assets/demo-video.mp4
 
-![Demo Video](./assets/demo-video.mp4)
-
-📹 **[Download Full Demo Video](./assets/demo-video.mp4)** | 🎬 **[Watch on YouTube](#)** (Coming Soon)
-
-<details>
-<summary>📸 Click to see screenshots</summary>
-
-### 🏠 Dashboard
-![Dashboard](https://via.placeholder.com/800x400/1a1a2e/ffffff?text=Dashboard+Screenshot)
-
-### 📊 Analytics
-![Analytics](https://via.placeholder.com/800x400/16213e/ffffff?text=Analytics+Dashboard)
-
-### 🎯 Match Results
-![Results](https://via.placeholder.com/800x400/0f3460/ffffff?text=Match+Results)
-
-</details>
+> 📹 **[Download Demo Video](./assets/demo-video.mp4)** for offline viewing
 
 </div>
 
@@ -52,15 +36,15 @@
 <tr>
 <td width="50%">
 
-**Smart Resume Screener** is a cutting-edge AI-powered application that revolutionizes the recruitment process. Powered by **Google's Gemini AI**, it automatically analyzes resumes, extracts key information, and intelligently matches candidates with job requirements.
+**Smart Resume Screener** is an advanced AI-powered recruitment platform that streamlines the hiring process. Built with **Google's Gemini AI**, it provides intelligent resume analysis, automated data extraction, and sophisticated candidate-job matching capabilities.
 
-### 🎯 Why Choose This?
+### 🎯 Core Benefits
 
-- 🧠 **Smart AI Analysis** - Goes beyond keyword matching
-- 📈 **Data-Driven Decisions** - Comprehensive scoring & analytics
-- ⏱️ **Save Time** - Automate repetitive screening tasks
-- 🎨 **Beautiful UI** - Modern, intuitive interface
-- 🔒 **Secure & Private** - Your data stays protected
+- 🧠 **Advanced AI Analysis** - Semantic understanding beyond keywords
+- 📈 **Data-Driven Insights** - Comprehensive scoring and analytics
+- ⏱️ **Increased Efficiency** - Automated screening workflows
+- 🎨 **Modern Interface** - Clean, intuitive user experience
+- 🔒 **Enterprise Security** - Secure data handling and privacy
 
 </td>
 <td width="50%">
@@ -434,7 +418,7 @@ pytest -n auto
 
 ## 🤝 Contributing
 
-We love contributions! 🎉 Here's how you can help make this project even better:
+Contributions are welcome! Here's how you can help:
 
 ### 🌟 Ways to Contribute
 
@@ -443,21 +427,18 @@ We love contributions! 🎉 Here's how you can help make this project even bette
 <td align="center" width="33%">
 
 ### 🐛 Report Bugs
-Found a bug?  
 [Open an issue](https://github.com/KshitizCodeHub/Smart-Resume-Screener/issues)
 
 </td>
 <td align="center" width="33%">
 
 ### 💡 Suggest Features
-Have an idea?  
 [Request a feature](https://github.com/KshitizCodeHub/Smart-Resume-Screener/issues)
 
 </td>
 <td align="center" width="33%">
 
 ### 🔧 Submit PRs
-Want to code?  
 [Fork & contribute](https://github.com/KshitizCodeHub/Smart-Resume-Screener/fork)
 
 </td>
@@ -466,27 +447,27 @@ Want to code?
 
 ### 📝 Contribution Guidelines
 
-1. 🍴 **Fork** the repository
-2. 🌿 **Create** a feature branch
+1. 🍴 Fork the repository
+2. 🌿 Create a feature branch
    ```bash
    git checkout -b feature/AmazingFeature
    ```
-3. ✍️ **Commit** your changes
+3. ✍️ Commit your changes
    ```bash
    git commit -m 'Add some AmazingFeature'
    ```
-4. 📤 **Push** to the branch
+4. 📤 Push to the branch
    ```bash
    git push origin feature/AmazingFeature
    ```
-5. 🔀 **Open** a Pull Request
+5. 🔀 Open a Pull Request
 
-### ✅ Before Submitting
+### ✅ Code Standards
 
-- [ ] Code follows PEP 8 style guide
+- [ ] Follow PEP 8 style guide
 - [ ] All tests pass (`pytest`)
 - [ ] Documentation is updated
-- [ ] Commit messages are clear
+- [ ] Clear commit messages
 - [ ] No merge conflicts
 
 ---
@@ -495,29 +476,9 @@ Want to code?
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
-```
-MIT License - Feel free to use this project for personal or commercial purposes!
-```
-
 ---
 
-## 👨‍💻 Author
-
-<div align="center">
-
-### Kshitiz
-
-[![GitHub](https://img.shields.io/badge/GitHub-KshitizCodeHub-181717?style=for-the-badge&logo=github)](https://github.com/KshitizCodeHub)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/kshitiz)
-[![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
-
-**💬 Let's connect and build something amazing together!**
-
-</div>
-
----
-
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 Special thanks to:
 
@@ -533,8 +494,6 @@ Special thanks to:
 
 <div align="center">
 
-### Need Help? We're Here! 👋
-
 [![Documentation](https://img.shields.io/badge/📖_Documentation-Visit-blue?style=for-the-badge)](http://localhost:8000/docs)
 [![Issues](https://img.shields.io/badge/🐛_Issues-Report-red?style=for-the-badge)](https://github.com/KshitizCodeHub/Smart-Resume-Screener/issues)
 [![Discussions](https://img.shields.io/badge/💬_Discussions-Join-green?style=for-the-badge)](https://github.com/KshitizCodeHub/Smart-Resume-Screener/discussions)
@@ -545,25 +504,12 @@ Special thanks to:
 
 <div align="center">
 
-## ⭐ Star History
+### ⭐ If you find this project helpful, please consider giving it a star!
 
 [![Star History Chart](https://api.star-history.com/svg?repos=KshitizCodeHub/Smart-Resume-Screener&type=Date)](https://star-history.com/#KshitizCodeHub/Smart-Resume-Screener&Date)
 
 ---
 
-### 🎯 If you find this project helpful, please consider giving it a ⭐!
-
-**Every star motivates us to keep improving! 🚀**
-
----
-
-**Made with ❤️ and ☕ by [Kshitiz](https://github.com/KshitizCodeHub)**
-
-![Visitors](https://api.visitorbadge.io/api/visitors?path=KshitizCodeHub%2FSmart-Resume-Screener&countColor=%23263759&style=flat)
-[![GitHub followers](https://img.shields.io/github/followers/KshitizCodeHub?style=social)](https://github.com/KshitizCodeHub)
-
----
-
-**Smart Resume Screener** - *Hire Smarter, Not Harder* 💼✨
+**Smart Resume Screener** - *Hire Smarter, Not Harder* 💼
 
 </div>
