@@ -1,0 +1,44 @@
+ALEX JOHNSON
+Email: alex.johnson@email.com | Phone: (555) 123-4567 | LinkedIn: linkedin.com/in/alexjohnson
+Location: San Francisco, CA
+
+PROFESSIONAL SUMMARY
+Senior Backend Engineer with 7 years of experience building scalable web applications using Python, 
+FastAPI, and cloud technologies. Proven track record of leading teams and delivering high-performance systems.
+
+WORK EXPERIENCE
+
+Senior Backend Engineer | TechCorp Inc. | San Francisco, CA | Jan 2020 - Present
+• Led development of microservices architecture using Python and FastAPI, serving 1M+ users
+• Designed and implemented RESTful APIs with 99.9% uptime
+• Managed team of 5 engineers, conducted code reviews, and mentored junior developers
+• Optimized database queries in PostgreSQL and MongoDB, reducing response time by 60%
+• Implemented CI/CD pipelines using Docker, Kubernetes, and Jenkins
+• Migrated legacy Flask applications to FastAPI, improving performance by 3x
+
+Software Engineer | StartupXYZ | San Francisco, CA | Jun 2017 - Dec 2019
+• Developed backend services using Python, Flask, and Django
+• Worked with PostgreSQL, Redis, and MongoDB databases
+• Built authentication and authorization systems using JWT
+• Collaborated with frontend team to design and implement REST APIs
+• Wrote comprehensive unit and integration tests achieving 90%+ coverage
+
+Junior Developer | WebSolutions | Remote | Jan 2016 - May 2017
+• Built web applications using Python and JavaScript
+• Maintained MySQL databases and wrote SQL queries
+• Fixed bugs and added features to existing codebases
+
+EDUCATION
+Bachelor of Science in Computer Science | Stanford University | 2016
+GPA: 3.8/4.0 | Dean's List 2014-2016
+
+SKILLS
+Languages: Python, JavaScript, TypeScript, SQL, Bash
+Frameworks: FastAPI, Flask, Django, Express.js, React
+Databases: PostgreSQL, MongoDB, Redis, MySQL
+DevOps: Docker, Kubernetes, AWS, GCP, Jenkins, GitLab CI/CD
+Other: REST APIs, Microservices, Agile/Scrum, Git, Linux
+
+CERTIFICATIONS
+• AWS Certified Solutions Architect - Associate (2022)
+• Docker Certified Associate (2021)

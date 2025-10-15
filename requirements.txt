@@ -1,0 +1,36 @@
+# FastAPI & Web Server
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+python-multipart==0.0.6
+aiofiles==23.2.1
+
+# Database
+motor==3.3.2
+pymongo==4.6.1
+
+# Data Validation
+pydantic==2.7.4
+pydantic-settings==2.1.0
+
+# Environment Configuration
+python-dotenv==1.0.0
+
+# LangChain & LLM (Updated versions for compatibility)
+langchain==0.2.16
+langchain-google-genai==1.0.10
+langchain-core==0.2.38
+google-generativeai==0.7.2
+
+# Document Processing
+pypdf==6.1.1
+pdfplumber==0.10.3
+python-docx==1.2.0
+python-magic-bin==0.4.14
+
+# Testing
+pytest==7.4.4
+pytest-asyncio==0.21.1
+httpx==0.26.0
+
+# Additional Utilities
+regex==2023.12.25

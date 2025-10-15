@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Resume Screener</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-brain"></i>
+                <h1>Smart Resume Screener</h1>
+            </div>
+            <nav class="nav">
+                <button class="nav-btn active" data-tab="upload">
+                    <i class="fas fa-upload"></i> Upload
+                </button>
+                <button class="nav-btn" data-tab="dashboard">
+                    <i class="fas fa-th-large"></i> Dashboard
+                </button>
+                <button class="nav-btn" data-tab="match">
+                    <i class="fas fa-search"></i> Match
+                </button>
+                <button class="theme-toggle" id="theme-toggle" title="Toggle Dark/Light Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Upload Tab -->
+            <section id="upload-tab" class="tab-content active">
+                <div class="upload-grid">
+                    <!-- Resume Upload -->
+                    <div class="upload-card">
+                        <div class="card-header">
+                            <i class="fas fa-file-alt"></i>
+                            <h2>Upload Resume</h2>
+                        </div>
+                        <div class="upload-area" id="resume-upload-area">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <p>Drag & drop resume here or click to browse</p>
+                            <p class="upload-hint">Supports PDF, DOCX, TXT (Max 10MB)</p>
+                            <input type="file" id="resume-file-input" accept=".pdf,.docx,.txt" hidden>
+                        </div>
+                        <div id="resume-upload-progress" class="upload-progress hidden">
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <p class="progress-text">Uploading...</p>
+                        </div>
+                        <div id="resume-upload-result" class="upload-result hidden"></div>
+                    </div>
+
+                    <!-- Job Description Upload -->
+                    <div class="upload-card">
+                        <div class="card-header">
+                            <i class="fas fa-briefcase"></i>
+                            <h2>Create Job Description</h2>
+                        </div>
+                        <form id="job-form" class="job-form">
+                            <div class="form-group">
+                                <label for="job-title">
+                                    Job Title
+                                    <span class="required">•</span>
+                                </label>
+                                <input type="text" id="job-title" placeholder="e.g., Senior Python Developer" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="job-description">
+                                    Job Description
+                                    <span class="required">•</span>
+                                </label>
+                                <textarea id="job-description" rows="8" 
+                                    placeholder="Paste the job description here...&#10;&#10;Include:&#10;• Required skills&#10;• Experience level&#10;• Responsibilities&#10;• Qualifications" 
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-plus-circle"></i> Create Job
+                            </button>
+                        </form>
+                        <div id="job-upload-result" class="upload-result hidden"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Dashboard Tab -->
+            <section id="dashboard-tab" class="tab-content">
+                <div class="dashboard-grid">
+                    <!-- Resumes Section -->
+                    <div class="dashboard-section">
+                        <div class="section-header">
+                            <h2><i class="fas fa-file-alt"></i> Uploaded Resumes</h2>
+                            <button class="btn btn-small" onclick="loadResumes()">
+                                <i class="fas fa-sync"></i> Refresh
+                            </button>
+                        </div>
+                        <div id="resumes-list" class="items-list">
+                            <div class="loading">
+                                <i class="fas fa-spinner fa-spin"></i> Loading...
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Jobs Section -->
+                    <div class="dashboard-section">
+                        <div class="section-header">
+                            <h2><i class="fas fa-briefcase"></i> Job Descriptions</h2>
+                            <button class="btn btn-small" onclick="loadJobs()">
+                                <i class="fas fa-sync"></i> Refresh
+                            </button>
+                        </div>
+                        <div id="jobs-list" class="items-list">
+                            <div class="loading">
+                                <i class="fas fa-spinner fa-spin"></i> Loading...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Match Tab -->
+            <section id="match-tab" class="tab-content">
+                <div class="match-container">
+                    <div class="match-header">
+                        <h2><i class="fas fa-search"></i> Match Resumes with Job</h2>
+                        <p>Select a job description to find the best matching candidates</p>
+                    </div>
+
+                    <div class="job-selector">
+                        <label for="job-select">Select Job Description:</label>
+                        <select id="job-select" class="job-select-dropdown">
+                            <option value="">Choose a job description...</option>
+                        </select>
+                        <button id="start-matching-btn" class="btn btn-primary" disabled>
+                            <i class="fas fa-magic"></i> Start Matching
+                        </button>
+                    </div>
+
+                    <div id="matching-progress" class="matching-progress hidden">
+                        <div class="loading-animation">
+                            <i class="fas fa-robot fa-3x"></i>
+                            <p>AI is analyzing resumes...</p>
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="match-results" class="match-results hidden">
+                        <div class="results-header">
+                            <h3>Match Results</h3>
+                            <div class="results-stats">
+                                <span id="results-count">0 candidates found</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Visual Analytics Section -->
+                        <div id="analytics-section" class="analytics-section hidden">
+                            <h3 class="analytics-title">
+                                <i class="fas fa-chart-pie"></i> Match Analytics
+                            </h3>
+                            <div class="analytics-grid">
+                                <!-- Score Distribution Chart -->
+                                <div class="analytics-card">
+                                    <h4><i class="fas fa-chart-bar"></i> Score Distribution</h4>
+                                    <canvas id="score-chart"></canvas>
+                                </div>
+                                
+                                <!-- Skills Match Chart -->
+                                <div class="analytics-card">
+                                    <h4><i class="fas fa-bullseye"></i> Skills Match Overview</h4>
+                                    <div class="chart-container">
+                                        <canvas id="skills-chart"></canvas>
+                                    </div>
+                                </div>
+                                
+                                <!-- Top Candidates -->
+                                <div class="analytics-card">
+                                    <h4><i class="fas fa-trophy"></i> Top Candidates</h4>
+                                    <div id="top-candidates-list"></div>
+                                </div>
+                                
+                                <!-- Match Quality Metrics -->
+                                <div class="analytics-card">
+                                    <h4><i class="fas fa-tachometer-alt"></i> Match Quality</h4>
+                                    <div id="quality-metrics"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="results-table-container"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden">
+        <i class="fas fa-check-circle"></i>
+        <span id="toast-message"></span>
+    </div>
+
+    <!-- Modal for Resume Details -->
+    <div id="resume-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Resume Details</h3>
+                <button class="modal-close" onclick="closeModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div id="modal-body" class="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Job Modal -->
+    <div id="job-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-job-title"></h3>
+                <button class="modal-close" onclick="closeJobModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-job-details"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
